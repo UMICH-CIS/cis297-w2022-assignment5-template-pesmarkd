@@ -37,8 +37,8 @@ namespace DisplayTable
             //load Authors table ordered by LastName then FirstName
             dbcontext.Authors
                 .OrderBy(author => author.LastName)
-                .ThenBy(author => author.FirstName)
-                .Load();
+                .ThenBy(author => author.FirstName);
+                /*.Load();/**/
             //specify datasource for authorBindingSource
             authorBindingSource.DataSource = dbcontext.Authors.Local;
         }
