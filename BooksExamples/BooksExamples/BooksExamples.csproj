@@ -70,6 +70,16 @@
     <Compile Include="Author.cs">
       <DependentUpon>BooksModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="BooksDataSet.Designer.cs">
+      <DependentUpon>BooksDataSet.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="BooksDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BooksDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="BooksModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -87,6 +97,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
     <Compile Include="Title.cs">
       <DependentUpon>BooksModel.tt</DependentUpon>
     </Compile>
@@ -97,11 +112,37 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>BooksModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="BooksDataSet.xsc">
+      <DependentUpon>BooksDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BooksDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BooksDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BooksDataSet.xss">
+      <DependentUpon>BooksDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BooksDataSet1.xsc">
+      <DependentUpon>BooksDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BooksDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BooksDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BooksDataSet1.xss">
+      <DependentUpon>BooksDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="BooksModel.edmx.diagram">
       <DependentUpon>BooksModel.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Author.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Books.mdf">
